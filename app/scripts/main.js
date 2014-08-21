@@ -27,7 +27,7 @@ require.config({
     }
 });
  
-require(['jquery', 'underscore', 'backbone', 'scripts/Zombie.js','scripts/module/Module.js'], function($, _, Backbone, Zombie, Module){
+require(['jquery', 'underscore', 'backbone', 'Zombie.js','module/Module.js'], function($, _, Backbone, Zombie, Module){
     // now you can do what you always done with $
     $('body').remove();
     // now you have the Zombie variable available in this context

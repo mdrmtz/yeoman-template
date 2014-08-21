@@ -33,11 +33,21 @@ Second
     
 finally for dependencies execute
 
+     npm install bower -g
      bower install && npm install
 
 then to create dist just run in the command line
 
     grunt 
+in case you get 
+
+Warning: PhantomJS timed out, possibly due to a missing Mocha run() call. Use --
+force to continue.
+
+you need to do
+
+     cd test && bower install && cd ..
+     grunt
 
 For testing use
 
